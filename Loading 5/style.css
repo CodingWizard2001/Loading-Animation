@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,
+.contain{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #090e09;
+}
+.circle{
+    width: 140px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.circle span{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    animation: load 1s linear infinite;
+}
+@keyframes load{
+    50%{
+        transform: scale(0.5);
+    }
+}
+.circle span:nth-child(4n + 2){
+    animation-delay: 200ms;
+}
+.circle span:nth-child(4n + 3){
+    animation-delay: 400ms;
+}

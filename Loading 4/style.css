@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,
+.contain{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.circle{
+    width: 120px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 23px;
+}
+.circle span{
+    width: 7px;
+    height: 45px;
+    background-color: #0e0c0c;
+    border-radius: 25px;
+}
+.circle span:nth-child(odd){
+    animation: load1 1s linear infinite;
+}
+.circle span:nth-child(even){
+    width: 7px;
+    height: 15px;
+    background-color: #100f0f;
+    border-radius: 25px;
+    animation: load2 1s linear infinite;
+}
+@keyframes load1{
+    50%{
+        height: 15px;
+    }
+}
+@keyframes load2{
+    50%{
+        height: 45px;
+    }
+}
