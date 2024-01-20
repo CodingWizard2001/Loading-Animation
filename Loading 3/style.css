@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,
+.contain{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #eecf61;
+}
+.circle{
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,15px);
+    grid-template-rows: repeat(4,15px);
+    align-content: space-between;
+    justify-content: space-between;
+    transform: rotate(-45deg);
+}
+.circle span{
+    background-color: #fff;
+    border-radius: 50%;
+    animation: load 1.6s linear infinite;
+}
+@keyframes load{
+    50%{
+        transform: scale(0.5);
+    }
+}
+.circle span:nth-child(4n + 3){
+    animation-delay: 200ms;
+}
+.circle span:nth-child(4n + 2){
+    animation-delay: 400ms;
+}
+.circle span:nth-child(4n + 1){
+    animation-delay: 600ms;
+}
