@@ -13,3 +13,4 @@ This is a simple loading animation created using HTML and CSS. It can be easily 
 #### <a href = "https://leafy-frangollo-afdfa9.netlify.app/" target = "_blank">Link9 Preview</a>
 #### <a href = "https://gleeful-truffle-6a2a41.netlify.app/" target = "_blank">Link10 Preview</a>
 #### <a href = "https://lively-taiyaki-634658.netlify.app/" target = "_blank">Link11 Preview</a>
+#### <a href = "https://deluxe-wisp-a29bac.netlify.app/" target = "_blank">Link12 Preview</a>
