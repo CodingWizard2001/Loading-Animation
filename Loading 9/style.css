@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0c0d0c;
+}
+.loader{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 20px;
+}
+.loader .loading{
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    margin: 0 10px;
+    border-radius: 50%;
+    animation: load 0.8s ease infinite;
+}
+.loader .loading.one{
+    animation-delay: 0.3s;
+}
+.loader .loading.two{
+    animation-delay: 0.4s;
+}
+.loader .loading.three{
+    animation-delay: 0.5s;
+}
+@keyframes load{
+    0%{
+        width: 30px;
+        height: 30px;
+    }
+    50%{
+        width: 20px;
+        height: 20px;
+    }
+}
