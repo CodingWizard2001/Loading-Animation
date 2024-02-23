@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+}
+.square{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 10vw;
+    height: 10vh;
+    background-color: #413d3d;
+    border-radius: 10px;
+    animation: load 1.5s ease infinite;
+}
+@keyframes load{
+    0%{
+        transform: translate(-50%,-50%) perspective(200px) rotateX(0) rotateY(0);
+    }
+    50%{
+        transform: translate(-50%,-50%) perspective(200px) rotateX(-180deg) rotateY(0);
+    }
+    100%{
+        transform: translate(-50%,-50%) perspective(200px) rotateX(-180deg) rotateY(-180deg);
+    }
+}
