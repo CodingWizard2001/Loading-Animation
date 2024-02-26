@@ -1,0 +1,99 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+}
+.circle{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #d5d5d5;
+    border-radius: 50%;
+    margin: auto;
+    left: 0;
+    right: 0;
+    bottom: 150px;
+    animation: loading 4s infinite alternate;
+}
+@keyframes loading{
+    19%{
+        background-color: #d5d5d5;
+    }
+    20%{
+        background-color: crimson;
+    }
+    100%{
+        background-color: crimson;
+    }
+}
+.wifi{
+    width: 150px;
+    height: 150px;
+    border: 30px solid transparent;
+    border-top: 30px solid #d5d5d5;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: -55px;
+    animation: loading1 4s infinite alternate;
+}
+@keyframes loading1{
+    39%{
+        border-top-color: #d5d5d5;
+    }
+    40%{
+        border-top-color: crimson;
+    }
+    100%{
+        border-top-color: crimson;
+    }
+}
+.wifi::before{
+    content: "";
+    width: 200px;
+    height: 200px;
+    border: 30px solid transparent;
+    border-top: 30px solid #d5d5d5;
+    border-radius: 50%;
+    position: absolute;
+    top: -80px;
+    left: -85px;
+    animation: loading2 4s infinite alternate;
+}
+@keyframes loading2{
+    59%{
+        border-top-color: #d5d5d5;
+    }
+    60%{
+        border-top-color: crimson;
+    }
+    100%{
+        border-top-color: crimson;
+    }
+}
+.wifi::after{
+    content: "";
+    width: 275px;
+    height: 275px;
+    border: 30px solid transparent;
+    border-top: 30px solid #d5d5d5;
+    border-radius: 50%;
+    position: absolute;
+    top: -130px;
+    left: -125px;
+    animation: loading3 4s infinite alternate;
+}
+@keyframes loading3{
+    79%{
+        border-top-color: #d5d5d5;
+    }
+    80%{
+        border-top-color: crimson;
+    }
+    100%{
+        border-top-color: crimson;
+    }
+}
