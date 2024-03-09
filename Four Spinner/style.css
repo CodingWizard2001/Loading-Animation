@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: #1a103a;
+}
+.container{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    animation: rotate 1.5s ease-in-out infinite;
+}
+/* <------------ Animation Start -------------> */
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/* <------------ Animation End -------------> */
+.container>div:nth-child(1){
+    width: 75px;
+    height: 75px;
+    background: linear-gradient(45deg,#e1d03c,#eed91d);
+    position: absolute;
+    border-radius: 50%;
+    top: 100px;
+    left: 100px;
+    box-shadow: 0 0 2px #eed91d;
+    animation: move1 1.5s infinite;
+}
+/* <------------ Animation Start -------------> */
+@keyframes move1{
+    50%{
+        transform: translate(-30px,-30px) scale(0.3);
+    }
+}
+/* <------------ Animation End -------------> */
+.container>div:nth-child(2){
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(45deg,#b23ce1,#8d19eb);
+    position: absolute;
+    border-radius: 50%;
+    top: 105px;
+    right: 110px;
+    box-shadow: 0 0 2px #8d19eb;
+    animation: move2 1.5s infinite;
+}
+/* <------------ Animation Start -------------> */
+@keyframes move2{
+    50%{
+        transform: translate(15px,-20px) scale(0.55);
+    }
+}
+/* <------------ Animation End -------------> */
+.container>div:nth-child(3){
+    width: 75px;
+    height: 75px;
+    background: linear-gradient(45deg,#42a2e7,#14b7e9);
+    position: absolute;
+    border-radius: 50%;
+    bottom: 100px;
+    right: 100px;
+    box-shadow: 0 0 2px #14b7e9;
+    animation: move3 1.5s infinite;
+}
+/* <------------ Animation Start -------------> */
+@keyframes move3{
+    50%{
+        transform: translate(30px,30px) scale(0.3);
+    }
+}
+/* <------------ Animation End -------------> */
+.container>div:nth-child(4){
+    width: 45px;
+    height: 45px;
+    background: linear-gradient(45deg,#60e742,#2ae920);
+    position: absolute;
+    border-radius: 50%;
+    bottom: 105px;
+    left: 110px;
+    box-shadow: 0 0 2px #2ae920;
+    animation: move4 1.5s infinite;
+}
+/* <------------ Animation Start -------------> */
+@keyframes move4{
+    50%{
+        transform: translate(-15px,20px) scale(0.55);
+    }
+}
+/* <------------ Animation End -------------> */
+/* <------------ Responsive Start -------------> */
+@media screen and (max-width:350px) {
+    .container{
+        width: 150px;
+        height: 150px;
+    }
+    .container>div:nth-child(1){
+        width: 55px;
+        height: 55px;
+        top: 90px;
+        left: 90px;
+    }
+    .container>div:nth-child(2){
+        width: 35px;
+        height: 35px;
+        top: 95px;
+        right: 100px;
+    }
+    .container>div:nth-child(3){
+        width: 55px;
+        height: 55px;
+        bottom: 90px;
+        right: 90px;
+    }
+    .container>div:nth-child(4){
+        width: 35px;
+        height: 35px;
+        bottom: 95px;
+        left: 100px;
+    }
+    @keyframes move1{
+        50%{
+            transform: translate(-30px,-30px) scale(0.25);
+        }
+    }
+    @keyframes move2{
+        50%{
+            transform: translate(15px,-20px) scale(0.35);
+        }
+    }
+    @keyframes move3{
+        50%{
+            transform: translate(30px,30px) scale(0.25);
+        }
+    }
+    @keyframes move4{
+        50%{
+            transform: translate(-15px,20px) scale(0.35);
+        }
+    }
+}
+/* <------------ Responsive End -------------> */
