@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0d688;
+}
+.poke{
+    overflow: hidden;
+    width: 250px;
+    height: 250px;
+    border: 8px solid #383b4f;
+    border-radius: 50%;
+    background-image: linear-gradient(to bottom,#f51939 125px,#fff 125px);
+    position: relative;
+    animation: load 1.2s ease-in-out infinite;
+}
+@keyframes load{
+    50%{
+        transform: scale(0.7);
+    }
+}
+.poke::before{
+    position: absolute;
+    content: "";
+    width: 242px;
+    height: 25px;
+    background-color: #383b4f;
+    top: 112.5px;
+}
+.poke::after{
+    position: absolute;
+    content: "";
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-image: radial-gradient(#ffffff 0px,#ffffff 10px,
+    #383b4f 10px,#383b4f 15px,
+    #ffffff 15px,#ffffff 32px,
+    #383b4f 32px
+    );
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
